@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  
+  <!-- <body> -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">𝓟𝓸𝓻𝓽𝓯𝓸𝓵𝓲𝓸</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home"  onclick="toggleMenu()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  id="portfolioLink" href="#projects" onclick="toggleMenu()">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button
+        href="#contact"
+        role="button"
+        class="d-none d-lg-block d-xl-block button-45"
+      >
+        <i class="fa-regular fa-paper-plane pr-3"></i>Hire Me
+      </button>
+    </nav>
+    
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center">
+        <div class="profile-img">
+            <img src="Assets/IMG_5442.JPG" alt="Profile Picture">
+        </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Saurabh Chaurasia</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1Kwb4K_xwC0j57ca-LbnQJwoMXIklgRMl/view?usp=drive_link', '_blank')"
+          >
+            View Resume
+            <i class="fa-solid fa-arrow-right-long pl-1"></i>
+          </button>
+          <button class="btn btn-color-1 custom-link" onclick="location.href='#experience'">
+            Explore my Skills
+          </button>
+        </div>
+        <div id="socials-container">
+         
+          <i
+            class="fa-brands fa-github icon"
+            onclick="window.open('', '_blank')"
+          ></i>
+          <!-- <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href="
+              /> -->
+          <i
+            class="fa-brands fa-linkedin icon"
+            onclick="'https://github.com/'"
+          ></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about-section">
+        <h2>About</h2>
+        <p data-aos="fade-up"
+        data-aos-duration="3000">
+            I have acquired and sharpened my skills in various fields, enabling me to be an effective and versatile professional. 
+            I am trustworthy, creative, and an effective communicator. 
+            I fondly anticipate working in a challenging yet rewarding organization to attain its visions for personal growth.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <p class="section__text__p1" data-aos="fade-up">Explore My</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1000">Skills</h1>
+    
+      <div class="skills-container">
+        <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <i class="fa-brands fa-html5 skicon" style="color: #c95d2e;"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <i class="fa-brands fa-css3-alt skicon" style="color: #147bbc;"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <i class="fa-brands fa-bootstrap skicon" style="color: #563d7c;"></i>
+          <span>Bootstrap</span>
+        </div>
+        <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <i class="fa-brands fa-js skicon" style="color: #f0db4f;"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <i class="fa-brands fa-react skicon" style="color: #61dafb;"></i>
+          <span>React</span>
+        </div>
+        <!-- <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <i class="fa-brands fa-tumblr skicon" style="color: #0ea5e9;"></i>
+          <span>Tailwind CSS</span>
+        </div> -->
+        <!-- <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <i class="fa-brands fa-react skicon" style="color: #007fff;"></i>
+          <span>MUI</span>
+        </div> -->
+        <!-- <div class="skill" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <div class="technical-bars">
+            <i class="fa-brands fa-node skicon" style="color: #8cc84b;"></i>
+            <span>
+              <div class="bar" data-aos="flip-up" data-aos-duration="3000"></div>
+            </span>
+            <div class="info">NodeJS</div>
+            <div class="progress-line nodejs">
+              <span data-label="70%"></span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    
+    
+
+    <!-- Portfolio Section -->
+
+    <section id="projects">
+      <p class="section__text__p1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        Browse My Recent
+      </p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="2000">
+        Projects
+      </h1>
+      <div class="experience-details-container">
+        <div class="part col-sm-12">
+          <div class="portfolio_nav col-sm-12" id="filter_button" data-aos="fade-up" data-aos-duration="3000">
+            <ul>
+              <li data-filter="*" class="current"><span>All Categories</span></li>
+              <li data-filter=".user-interface"><span>UI/UX</span></li>
+              <li data-filter=".user-javascript"><span>JavaScript</span></li>
+              <li data-filter=".branding"><span>React</span></li>
+            </ul>
+          </div>
+    
+          <div class="portfolio_content">
+            <div class="row portfolio_subcontent .user-interface">
+              <img src="Assets/project1 (1).jpeg" />
+              <div class="layer">
+                <h5>Itune Website</h5>
+                <p>Built entirely with HTML and CSS, the website is optimized for both desktop and mobile devices.</p>
+                <a href="https://musicitune.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+    
+            <div class="row portfolio_subcontent .user-interface">
+              <img src="Assets/project2 (2).jpeg" />
+              <div class="layer">
+                <h5>Foodie Website</h5>
+                <p>Built entirely with HTML and CSS, the website is optimized for both desktop and mobile devices.</p>
+                <a href="https://foodieperson.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+    
+            <div class="row portfolio_subcontent .branding">
+              <img src="Assets/IMG_5291.JPEG" />
+              <div class="layer">
+                <h5>Delivery Website</h5>
+                <p>Built with React and Redux, the website is optimized for both desktop and mobile devices.</p>
+                <a href="https://zwigato-react-redux.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+    
+            <div class="row portfolio_subcontent .branding">
+              <img src="Assets/WhatsApp Image 2024-07-16 at 12.56.26 PM.jpeg" />
+              <div class="layer">
+                <h5>E-commerce Website</h5>
+                <p>Built with React, the website is optimized for desktop.</p>
+                <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+    
+            <div class="row portfolio_subcontent .user-javascript">
+              <img src="Assets/WhatsApp Image 2024-07-25 at 12.47.39 PM.jpeg" />
+              <div class="layer">
+                <h5>Simple Quiz</h5>
+                <p>This project is built using JavaScript to create an interactive and dynamic user experience.</p>                <a href="https://quizproject-js.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+    
+            <div class="row portfolio_subcontent .branding">
+              <img src="Assets/IMG_5295.JPEG" />
+              <div class="layer">
+                <h5>CRUD Application</h5>
+                <p>Built with React and Firebase, the website is optimized for both desktop and mobile devices.</p>
+                <a href="https://firebasecrudcontact.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+    
+            <div id="more-projects" class="column-layout" style="display:none">
+              
+              <div class="row portfolio_subcontent .branding">
+                <img src="Assets/moviedb.jpg" />
+                <div class="layer">
+                  <h5>MovieDB</h5>
+                  <p>Built with React, the website is optimized for desktop.</p>
+                  <a href="https://movie-db-project-react.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div> 
+
+              <div class="row portfolio_subcontent .user-interface">
+                <img src="Assets/mediaplus.jpeg" />
+                <div class="layer">
+                  <h5>MediaPlus</h5>
+                  <p>Built entirely with HTML and CSS, the website is optimized for both desktop and mobile devices.</p>
+                  <a href="https://mediplus-website.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+
+              <div class="row portfolio_subcontent .user-javascript">
+                <img src="Assets/calculator.jpg" />
+                <div class="layer">
+                  <h5>Calculator</h5>
+                  <p>A simple and interactive calculator built using JavaScript, providing basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+                  <a href="https://jscalculus.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div> 
+
+              <div class="row portfolio_subcontent .branding">
+                <img src="Assets/IMG_6563.JPEG" />
+                <div class="layer">
+                  <h5>Sms Portal</h5>
+                  <p>Built with React, the website is optimized for desktop, ensuring smooth performance and a responsive user experience.</p>
+                  <a href="https://smsportalsendcards.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div> 
+
+              <div class="row portfolio_subcontent .user-javascript">
+                <img src="Assets/IMG_6632.JPEG" />
+                <div class="layer">
+                  <h5>Bank Paasbook</h5>
+                  <p>This project is a bank passbook simulation built with JavaScript, HTML, and CSS. It allows users to manage their transactions by recording credits (deposits) and debits (withdrawals). </p>
+                  <a href="https://bankpaasbook.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div> 
+
+              <div class="row portfolio_subcontent .branding">
+                <img src="Assets/IMG_6559.JPEG" />
+                <div class="layer">
+                  <h5>Headgear Management</h5>
+                  <p>Built with React, the website is optimized for desktop,designed to leverage modern web technologies.</p>
+                  <a href="https://headgearwebsite.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>              
+
+              <div class="row portfolio_subcontent .user-javascript">
+                <img src="Assets/dictionary.jfif" />
+                <div class="layer">
+                  <h5>Dictionary</h5>
+                  <p>This project is a simple dictionary application built using HTML, CSS, and JavaScript. The app allows users to search for the meanings of words by fetching data from a public dictionary API.</p>
+                  <a href="https://dictionarysearchapi.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>              
+              
+            </div>
+
+          
+
+          </div>
+
+        </div>
+        
+        <div class="view-more-container">
+          <button class="button-45" id="view-more-btn">View More</button>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    
+    <section id= "contact" class="contact-section">
+        <p
+        class="section__text__p1">
+          Get in Touch
+        </p>
+        <h1 class="title" data-aos="fade-down"
+        data-aos-duration="1000">Contact Me</h1>
+
+        <div class="contact-info"data-aos="zoom-out"  data-aos-duration="3000">
+            <div class="contact-item" >
+                 <i class="card-icon fas fa-envelope"></i> 
+                <a  href="mailto:saurabhchaurasiabbf.com">Saurabhchaurasiabbf@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="card-icon fas fa-phone-alt"></i> 
+                <a href="tel:9967690655">+91 9967690655</a>
+            </div>
+            <div class="contact-item special">
+                <i class="card-icon fas fa-location-dot"></i> 
+                <a href="https://maps.app.goo.gl/tBRbHjTuCreDBCrB7" target="_blank">Khumbharwada,Girgaon, Mumbai 04</a>
+            </div>
+        </div>
+        <div class="social-media">
+            <i class="fa-brands fa-x-twitter card-icon" data-aos="flip-left"  data-aos-duration="3000"></i>
+            <i class="fa-brands fa-facebook card-icon" data-aos="flip-left"  data-aos-duration="3000"></i>
+            <i class="fa-brands fa-whatsapp card-icon" data-aos="flip-left"  data-aos-duration="3000"></i>
+        </div>
+        
+            <p class="thanks">Thanks for Scrolling</p>
+       
+    </section>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script
+      src="https://kit.fontawesome.com/f41a1995d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
